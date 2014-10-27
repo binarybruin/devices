@@ -3,6 +3,18 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+
+ul {
+  list-style-type: none;
+}
+
+.deviceItem {
+  text-align: left;
+  background-color: #ADEBEB;
+  border-bottom: 1px solid #0099FF;
+  padding: 1em 2em 2em 0em;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
