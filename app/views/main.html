@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <span class="search">Search:</span> <input ng-model="query">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10">
+      <div class="container">
+        <h2>Devices</h2>
+        <div class="deviceItem" ng-repeat="device in devices | filter:query">
+          <span class="item" ng-model="device">{{ device.name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
