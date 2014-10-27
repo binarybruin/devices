@@ -15,6 +15,16 @@ ul {
   padding: 1em 2em 2em 0em;
 }
 
+#itemName {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#itemStatus {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
