@@ -2,12 +2,21 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-6">
             <span class="search">Search:</span>
             <input ng-model="query">
         </div>
+        <div class="col-md-6">
+            <span class="sort">Sort by:</span>
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="status">In/Out</option>
+            </select>
+        </div>
     </div>
 </div>
+
+<br>
 
 <div class="container-fluid">
     <div class="row">
@@ -23,7 +32,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="container">
-            <ul class="deviceList" ng-repeat="device in devices | filter:query">
+            <ul class="deviceList" ng-repeat="device in devices | filter:query | orderBy:orderProp">
                 <li class="deviceItem">
                     <div class="col-md-6">
                         <span id="itemName" ng-model="device">{{ device.name }}</span>

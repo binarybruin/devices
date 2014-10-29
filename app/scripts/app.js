@@ -23,9 +23,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/status', {
-        templateUrl: 'views/status.html',
-        controller: 'StatusCtrl'
+      .when('/log', {
+        templateUrl: 'views/log.html',
+        controller: 'LogCtrl'
       })
       .otherwise({
         redirectTo: '/'

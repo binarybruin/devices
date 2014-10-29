@@ -8,8 +8,9 @@
  * Controller of the sesameDevicesApp
  */
 angular.module('sesameDevicesApp')
-  .controller('StatusCtrl', function ($scope) {
-    $scope.deviceStatus = function() {
+  .controller('LogCtrl', function ($scope) {
+    $scope.deviceLog = function() {
       $scope.devices;
+      $scope.users;
     }
   });
