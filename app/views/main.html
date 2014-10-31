@@ -23,7 +23,13 @@
         <div class="col-md-6">
             <h4 id="nameTitle">Name</h4>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-2">
+            <h4 id="nameTitle">Platform</h4>
+        </div>
+        <div class="col-md-2">
+            <h4 id="nameTitle">OS</h4>
+        </div>
+        <div class="col-md-2">
             <h4 id="statusTitle">Status</h4>
         </div>
     </div>
@@ -37,7 +43,13 @@
                     <div class="col-md-6">
                         <span id="itemName" ng-model="device">{{ device.name }}</span>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2">
+                        <span id="itemPlatform" ng-model="device">{{ device.platform }}</span>
+                    </div>
+                    <div class="col-md-2">
+                        <span id="itemOS" ng-model="device">{{ device.os }}</span>
+                    </div>
+                    <div class="col-md-2">
                         <span id="itemStatus" ng-model="device">{{ device.currStatus }}</span>
                     </div>
                 </li>
