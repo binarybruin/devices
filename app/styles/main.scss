@@ -4,6 +4,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 
+.colTitle {
+  font-weight: bold;
+  text-align: left;
+}
+
 .deviceList {
   list-style-type: none;
   padding-left: 0;
@@ -18,12 +23,24 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 #itemName {
   font-weight: bold;
-  font-size: 16px;
 }
 
 #itemStatus {
   text-transform: uppercase;
   font-weight: bold;
+  margin-left: 1em;
+}
+
+#itemChecked {
+  text-align: center;
+  margin-left: 2em;
+}
+
+.submit {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  background-color: #009933;
 }
 
 .browsehappy {

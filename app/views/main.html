@@ -20,17 +20,20 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
-            <h4 id="nameTitle">Name</h4>
+        <div class="col-md-5">
+            <h4 class="colTitle">Name</h4>
         </div>
         <div class="col-md-2">
-            <h4 id="nameTitle">Platform</h4>
+            <h4 class="colTitle">Platform</h4>
         </div>
         <div class="col-md-2">
-            <h4 id="nameTitle">OS</h4>
+            <h4 class="colTitle">OS</h4>
         </div>
         <div class="col-md-2">
-            <h4 id="statusTitle">Status</h4>
+            <h4 class="colTitle">Status</h4>
+        </div>
+        <div class="col-md-1">
+            <h4 class="colTitle">Select</h4>
         </div>
     </div>
 </div>
@@ -40,7 +43,7 @@
         <div class="container">
             <ul class="deviceList" ng-repeat="device in devices | filter:query | orderBy:orderProp">
                 <li class="deviceItem">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <span id="itemName" ng-model="device">{{ device.name }}</span>
                     </div>
                     <div class="col-md-2">
@@ -52,8 +55,24 @@
                     <div class="col-md-2">
                         <span id="itemStatus" ng-model="device">{{ device.currStatus }}</span>
                     </div>
+                    <div class="col-md-1">
+                        <input id="itemChecked" type="checkbox">
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10">
+    </div>
+    <div class="col-md-2">
+      <button class="btn submit">Sign Out</button>
+    </div>
+</div>
+
+<br>
