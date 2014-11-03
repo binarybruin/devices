@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name sesameDevicesApp.controller:AboutCtrl
+ * @name sesameDevicesApp.controller:ReturnCtrl
  * @description
- * # AboutCtrl
+ * # ReturnCtrl
  * Controller of the sesameDevicesApp
  */
 angular.module('sesameDevicesApp')
-  .controller('LogCtrl', function ($scope) {
+  .controller('ReturnCtrl', function ($scope) {
     $scope.deviceLog = function() {
       $scope.devices;
       $scope.users;

@@ -23,9 +23,13 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/log', {
-        templateUrl: 'views/log.html',
-        controller: 'LogCtrl'
+      .when('/sign-out', {
+        templateUrl: 'views/sign-out.html',
+        controller: 'SignOutCtrl'
+      })
+      .when('/return', {
+        templateUrl: 'views/return.html',
+        controller: 'ReturnCtrl'
       })
       .otherwise({
         redirectTo: '/'

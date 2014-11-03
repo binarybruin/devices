@@ -1,0 +1,80 @@
+<h2>Devices Checking Out:</h2>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <ul class="deviceList" ng-repeat="device in devices | filter:query | orderBy:orderProp">
+                <li class="deviceItem">
+                    <div class="col-md-12">
+                        <span id="itemName" ng-model="device">{{ device.name }}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="signout">
+            <div class="col-md-12">
+            	<span class="name">Name:&nbsp;</span>
+            	<input ng-model="query">
+            	<!-- change query to autocomplete -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="signout">
+            <div class="col-md-6">
+            	<span class="date">Date Out:&nbsp;</span>
+            	<!-- add date picker -->
+            </div>
+            <div class="col-md-6">
+            	<span class="date">Planned Return:&nbsp;</span>
+            	<!-- add date picker -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+	<div class="row">
+        <div class="signout">
+            <div class="col-md-6">
+            	<span class="brick">Brick:</span>
+            	<input id="itemChecked" type="checkbox"><br>
+            	<span class="brick">ID:&nbsp;</span><input ng-model="query">
+            	<!-- change query to autocomplete -->
+            </div>
+            <div class="col-md-6">
+            	<span class="cable">Cable:</span>
+            	<input id="itemChecked" type="checkbox"><br>
+            	<span class="cable">ID:&nbsp;</span><input ng-model="query">
+            	<!-- change query to autocomplete -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+	<div class="row">
+        <div class="signout">
+            <div class="col-md-12">
+            	<span class="project">Project:</span><br>
+            	<input>
+            </div>
+        </div>
+    </div>
+</div>
